@@ -1,0 +1,39 @@
+# Brownie configuration file
+# https://eth-brownie.readthedocs.io/en/stable/config.html
+# required external contracts
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.7.3
+  - smartcontractkit/chainlink-brownie-contracts@0.2.2
+pytest:
+    # these settings replace the defaults when running pytest
+    default_contract_owner: true
+    reverting_tx_gas_limit: 6721975
+    revert_traceback: true
+compiler:
+    solc:
+        version: null
+        optimizer:
+            enabled: true
+            runs: 1
+      
+        remappings:
+          - "@openzeppelin/contracts=OpenZeppelin/openzeppelin-contracts@4.7.3/contracts"
+# automatically fetch contract sources from Etherscan
+autofetch_sources: True
+reports:
+    exclude_contracts:
+        - Address
+        - SafeERC20
+        - Ownable
+        - TransparentUpgradeableProxy
+        - ERC1967Upgrade
+        - AddressUpgradeable
+        - SafeERC20Upgradeable
+        - OwnableUpgradeable
+        - MockToken
+        - SafeMathUpgradeable
+        - AccessControlUpgradeable
+        - EnumerableSetUpgradeable
+        - AddressUpgradeable
+        - InitializableAbstractStrategy
+        
