@@ -1,5 +1,6 @@
 # sushibarcontract-extendedfeature
 
+```
 Fork SushiSwap’s SushiBar contract and implement following featuresStaking:
 Time lock after staking:
 2 days - 0% can be unstaked
@@ -13,6 +14,7 @@ After 8 days - 100% can be unstaked.This will work like a high tax though.
 6-8 days - 25% tax
 After 8 days, 0% tax.
 The tokens received on tax will go back into rewards pool.
+```
 
 For [Vyper](https://github.com/vyperlang/vyper), check out [`vyper-token-mix`](https://github.com/brownie-mix/vyper-token-mix).
 
